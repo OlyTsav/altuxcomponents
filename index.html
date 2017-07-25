@@ -31,23 +31,28 @@
 
             <section id="introduction">
                 <div class="row">
+                    <h1>Introduction</h1>
                     <div class="col-xs-12 col-lg-6 section-description">
-                        <h1>Introduction</h1>
                         <h4>How To Use This Guide</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
 
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
 
+                        <h4>Code Samples</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
 
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+
                     </div>
                     <div class="col-xs-12 col-lg-6 section-example">
-                        <pre><code>
+                        <pre><code id="foo">
                         &lt;div&gt;
                         Your content here Your content here Your content here Your content here Your content here
                         &lt;/div&gt;
                         </code></pre>
+                        <button class="btn btn-primary code-btn" data-clipboard-target="#foo">
+                            Copy to Clipboard
+                        </button>
                     </div>
                 </div>
             </section>
@@ -176,9 +181,12 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/scrollspy.js"></script>
+<script type="text/javascript" src="js/clipboard.min.js"></script>
 
 <script>
     $(document).ready(function(){
+
+        new Clipboard('.code-btn');
         
     $('body').scrollspy({offset: 42});
 

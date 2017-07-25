@@ -47,6 +47,29 @@ body{
     font-family: Segoe UI Light;
 }
 
+::selection {
+  background: rgba(116,77,169,.8); /* WebKit/Blink Browsers */
+  color:#fff;
+}
+::-moz-selection {
+  background: rgba(116,77,169,.8); /* Gecko Browsers */
+  color:#fff;
+}
+
+.btn-primary,.btn-primary:focus,.btn-primary:active{
+    -webkit-border-radius: 0 0 0;
+    border-radius: 0 0 0;
+    background-color:$purple !important;
+    color:#fff;
+    outline:none;
+    border:0px solid #fff;
+}
+
+.btn-primary:hover{
+    background-color:$purple;
+    opacity:.95
+}
+
 header{
     position: fixed;
     z-index:10;
@@ -130,8 +153,10 @@ header{
     padding-left:60px;
 }
 
-.section-description h1{
+h1{
     margin-bottom:30px;
+    padding-left:15px;
+    display:block;
 }
 
 .section-description h4{
