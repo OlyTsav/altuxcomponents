@@ -56,6 +56,11 @@ body{
   color:#fff;
 }
 
+a,a:hover,a:focus,a:visited,a:active{
+    color:#000;
+    text-decoration: underline !important;
+}
+
 .btn-primary,.btn-primary:focus,.btn-primary:active{
     -webkit-border-radius: 0 0 0;
     border-radius: 0 0 0;
@@ -141,6 +146,10 @@ header{
     padding:60px 25px;
 }
 
+section .row{
+    margin-bottom:10px;
+}
+
 .section-description{
     padding-right:60px;
 }
@@ -159,9 +168,29 @@ h1{
     display:block;
 }
 
+h4{
+    margin-top:20px;
+}
+
 .section-description h4{
     font-family: $font-normal;
     margin-bottom:15px;
+}
+
+.section-example img{
+    width:100%;
+    height:auto
+}
+
+.section-example .dual-image{
+    float:left;
+    width:50%;
+    padding-right:20px;
+}
+
+.measurement-data{
+    font-family: Segoe UI Bold;
+    color: #00B7C3;
 }
 
 /*MWF OVERIDES*/

@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Client Dashbaord - Home</title>
+    <title>Alt UX Code Guide</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/mwf-west-european-default.css" />
@@ -34,14 +34,14 @@
                     <h1>Introduction</h1>
                     <div class="col-xs-12 col-lg-6 section-description">
                         <h4>How To Use This Guide</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                        <p>This guide acts as a reference for designers and developers for creating and implementing designs for Alt UI components. Throughout each section you will find a description and any applicable examples for usage. If the example contains a code sample, it may be copied for direct implementation using the Alt UI SDK, harnessing Angular.js v1.5.</p>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                        <h4>Recommend A Style</h4>
+                        <p>If you notice a style is missing or you have created a new component with unused styles, use the “Recommend a Style” link in the top right of this guide. All submissions will be sent to the style owner and discussed with you prior to implementation into this guide.</p>
+                        <p>For questions regarding implementation of anything you see here, contact justinay@microsoft.com</p>
 
                         <h4>Code Samples</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                        <p>Code samples can be copied directly from this guide. They are dependent on the latest SDK which includes Angular.js v1.5. Code samples may need to have new inline Angular requests added or altered in order to work for your specific application. For recommendations of more efficient writing or structuring of code, email justinay@microsoft.com.</p>
 
                     </div>
                     <div class="col-xs-12 col-lg-6 section-example">
@@ -59,8 +59,8 @@
 
             <section id="screen-sizes">
                 <div class="row">
+                    <h1>Screen Sizes</h1>
                     <div class="col-xs-12 col-lg-6 section-description">
-                        <h1>Screen Sizes</h1>
                         <h4>How To Use This Guide</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
 
@@ -82,31 +82,50 @@
 
             <section id="motion">
                 <div class="row">
+                    <h1>Motion</h1>
                     <div class="col-xs-12 col-lg-6 section-description">
-                        <h1>Motion</h1>
-                        <h4>How To Use This Guide</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                        <p>All animations use the same curve structure. Entrance and some exit animations use the same curve, but are reverse of each other. Some exit animations are quicker than others. This will be explained further in the guide </p>
+                        
+                        <h4>Animation Curve and Time</h4>
+                        <p>Each animation has a maximum time allocation of .5s. Using <a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank">jQuery Easing</a>, we call the easeOutExpo property which will match our animation curve.</p>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
                     </div>
                     <div class="col-xs-12 col-lg-6 section-example">
-                        <pre><code>
-                        &lt;div&gt;
-                        Your content here
-                        &lt;/div&gt;
-                        </code></pre>
+                        <img class="dual-image" src="assets/style-motion-mass-do-2.gif" />
+                        <img class="dual-image" src="assets/style-motion-mass-do-3.gif" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-lg-6 section-description">
+                    <h4>Entrances</h4>
+                    <p>Used for page loading and adding elements that are requested via agent actions. Headers, sidebars, and main content all have different directions they enter from, see section</p>
+                    <p>Ultimately all animations use their motion to form a hierarchy and better engage the user with their content. For now, all entrances have the same curve and timing applied to that curve. The curve is pulled directly from MWF Motion guidelines for elements entering view, and have a duration of <span class="measurement-data">.5s</span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-lg-6 section-description">
+                    <h4>First Time Entrances</h4>
+                    <p>The first time an element enters the screen it does so through the entrance animation. If the element is in a group of other similar ones, such as a tile, it is loaded in a linear order with a <span class="measurement-data">.15s</span> delay between element start animation in the group.</p>
+                    </div>
+                    <div class="col-xs-12 col-lg-6 section-example">
+                        <img src="assets/tile_entrance.gif" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-lg-6 section-description">
+                    <h4>Exits</h4>
+                    <p>Used for switching views, from one location in the dashboard to the other. Also used when an element on the page is being removed from view or replaced with new updated data. The two animations are different in that an action like replacing content will use the reverse of the entrance animation. But switching views will remove all the elements much quicker as to allow more time for the next entrance of the new screen.</p>
+                    </div>
+                    <div class="col-xs-12 col-lg-6 section-example">
+                        <img src="assets/tile_exit.gif" />
                     </div>
                 </div>
             </section>
 
             <section id="aaf">
                 <div class="row">
+                    <h1>3 Step Agent Action Framework</h1>
                     <div class="col-xs-12 col-lg-6 section-description">
-                        <h1>3 Step AGent Action Framework</h1>
                         <h4>How To Use This Guide</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
 
@@ -128,8 +147,8 @@
 
             <section id="pivot">
                 <div class="row">
+                    <h1>Pivot</h1>
                     <div class="col-xs-12 col-lg-6 section-description">
-                        <h1>Pivot</h1>
                         <h4>How To Use This Guide</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
 
@@ -151,8 +170,8 @@
 
             <section id="breadcrumbs">
                 <div class="row">
+                    <h1>Breadcrumb</h1>
                     <div class="col-xs-12 col-lg-6 section-description">
-                        <h1>Breadcrumb</h1>
                         <h4>How To Use This Guide</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
 
